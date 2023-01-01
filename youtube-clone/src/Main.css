@@ -1,0 +1,89 @@
+.main--page{
+    flex: 0.8;
+    border-top: 1px solid #d1cdcd;
+    
+}
+
+.main--section {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    width: 100%;
+}
+
+h1 {
+    margin-left: 20px;
+}
+.video--info{
+    width: 300px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    line-height: 1.4;
+}
+.video--img {
+    width: 200px;
+}
+.channel--img{
+    border-radius: 50%;
+    
+}
+
+.channel--name{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.views--details {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+p span {
+    font-size: 1rem;
+}
+.title{
+    font-size:1rem;
+    font-weight: 700;
+}
+.channel--name p{
+    color: #272626;
+    font-size: 0.9rem;
+}
+
+.channel--name .check--icon{
+    font-size: 0.9rem;
+    color: rgb(7, 58, 7);
+}
+.views--details p {
+    color:grey;
+    font-size: 0.8rem;
+}
+@media screen and (max-width:800px) {
+    .main--section {
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+       align-items: center;
+       justify-content: center;
+    }
+}
+
+/*@media screen and (max-width:375px) {
+    .main--section {
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+       justify-content: center;
+       margin: auto;
+       place-items: center;
+    }
+    .video--info {
+        margin: auto;
+        place-items: center;
+    }
+    
+}*/

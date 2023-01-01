@@ -1,0 +1,3 @@
+API_KEY= AIzaSyCNL41DlGP1vG2RutZZyo5hi7NAHwRv2-0
+
+API = https://www.googleapis.com/youtube/v3/videos

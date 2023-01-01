@@ -1,0 +1,46 @@
+.sidebar{
+    flex: 0.2;
+    
+}
+
+.upper--icons a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #272525;
+    margin: 20px 20px 10px 20px;
+    gap:11px;
+    padding: 7px;
+    
+}
+
+.upper--icons a:hover{
+    background-color: #d1cdcd;
+
+}
+
+.show-toggle {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.sidebar > hr{
+    width: 175px;
+    height: 0.2px;
+    border:none;
+    background-color: #d1cdcd;
+    border-width: 0.1px;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .sidebar{
+        display: none;
+        
+        border-top: 1px solid #d1cdcd;
+    }
+}
