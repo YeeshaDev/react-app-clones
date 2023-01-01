@@ -1,0 +1,39 @@
+.movierow--content {
+    padding: 0.7rem;
+}
+.row--cards{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+    cursor:pointer;
+}
+
+.row--cards::-webkit-scrollbar{
+    display: none;
+}
+.row--image {
+    width: 100%;
+    object-fit: contain;
+    max-height: 8rem;
+    transition: transform 400ms;
+
+}
+
+.row--image:hover {
+    transform: scale(1.07);
+}
+
+.rowlarge--image {
+    max-height: 13rem;
+    transition: transform 400ms;
+}
+.rowlarge--image:hover {
+    transform: scale(1.085);
+}
+
+.trailer {
+    margin-top: 3rem;
+}
