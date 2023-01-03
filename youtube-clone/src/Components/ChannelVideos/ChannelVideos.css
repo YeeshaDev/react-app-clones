@@ -1,0 +1,53 @@
+
+.videorow {
+    flex: 0.9;
+    margin: 10px;
+    padding: 10px;
+    color: #181717;
+}
+.videorow--img {
+    padding:1rem;
+
+}
+.videorow--name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.videorow--text h3 {
+    font-size: 1.2rem;
+    color: #181717;
+}
+
+.videorow--headline{
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+}
+
+.videorow--views {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+}
+.videorow--description {
+    font-size: 0.7rem;
+    color: grey;
+    margin-top: 0.7rem;
+}
+@media screen and (max-width:800px){
+    .videorow--img {
+        padding:1rem;
+        width:80%;
+    }
+    .videorow--text h3 {
+        font-size: 1rem;
+        color: #181717;
+    }
+    .videorow--headline{
+        width: 80%;
+    }
+    .videorow--description {
+        width:80%;
+    }
+    
+}
