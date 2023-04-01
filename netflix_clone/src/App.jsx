@@ -21,7 +21,7 @@ function App() {
           <div className='container'>
           
       <Banner/>
-      <Row title="Trending Now" fetchUrl={requests?.fetchTrending}
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending}
       isLarge/>
       {/*<Row title="New Release" fetchUrl={requests.fetchUpcoming}
        />*/}
@@ -29,11 +29,11 @@ function App() {
       <Row title="Netflix Originals" 
       fetchUrl={requests?.fetchNetflixOriginals}
        />
-      <Row title="Top Rated" fetchUrl={requests?.fetchTopRated}/>
-      <Row title="Action movies" fetchUrl={requests?.fetchActionMovies}/>
-      <Row title="Comedy Movies" fetchUrl={requests?.fetchComedyMovies}/>
-      <Row title="Horror Movies" fetchUrl={requests?.fetchHorrorMovies}/>
-      <Row title="Romance Movies" fetchUrl={requests?.fetchRomanceMovies}/>
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated}/>
+      <Row title="Action movies" fetchUrl={requests.fetchActionMovies}/>
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies}/>
+      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies}/>
+      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}/>
       
       </div>
       </Route>
