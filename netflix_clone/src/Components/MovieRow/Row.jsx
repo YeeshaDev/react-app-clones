@@ -47,21 +47,20 @@ const handleClick = async (movie) => {
     <div className='movierow--content'>
         <h1>{title}</h1>
         <div className='row--cards'>
-        {movies.map(
-          (movie) =>
-             (
-              <img
+        {movies.map((movie) => {
+          const path=movie.poster_path || movie.backdrop_path
+          return (
+            <img
                 onClick={() => handleClick(movie)}
                 key={movie.id}
                 className={isLarge ? "rowlarge--image" : "row--image"}
-                src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+                src={`${base_url + path}`}
                 alt={movie.name}
                 
                 
               />
-            )
-            
-        )}
+          )
+        })}
         </div>
         {trailerUrl && 
           <YouTube videoId={trailerUrl} opts={opts}/>
