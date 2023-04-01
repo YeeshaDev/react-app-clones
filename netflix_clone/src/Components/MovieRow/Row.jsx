@@ -18,7 +18,7 @@ useEffect(() => {
 async function fetchData() {
     const request = await axios.get(fetchUrl);
     //console.log(request)
-    setMovies(request?.data?.results);
+    setMovies(request.data.results);
     return request;
 }
 fetchData();
@@ -56,7 +56,7 @@ const handleClick = async (movie) => {
                 onClick={() => handleClick(movie)}
                 key={movie.id}
                 className={isLarge ? "rowlarge--image" : "row--image"}
-                src={`${base_url}${movie.poster_path || movie.backdrop_path}`}
+                src={`${base_url}${movie.poster_path}`}
                 alt={movie.name}
                 
                 
