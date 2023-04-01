@@ -56,7 +56,7 @@ const handleClick = async (movie) => {
                 onClick={() => handleClick(movie)}
                 key={movie.id}
                 className={isLarge ? "rowlarge--image" : "row--image"}
-                src={`${base_url}${movie?.poster_path}`}
+                src={`${base_url}${movie.poster_path}`}
                 alt={movie.name}
                 
                 
