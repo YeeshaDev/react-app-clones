@@ -1,0 +1,487 @@
+.landingPage {
+    text-align:center
+}
+
+.landing--banner {
+    position: relative;
+   width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.landing--banner::before {
+content:"";
+position: absolute;
+background-image: url("/src/assets/netflixbg.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+opacity: 0.4;
+}
+
+.landing--upper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.netflix--logo {
+    width: 7rem;
+    object-fit: contain;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    
+}
+
+.view--btn {
+    padding: 10px;
+    white-space: nowrap;
+    background-color: #fff;
+    color: #e50914;
+    border: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    width: 90px;
+    cursor: pointer;
+    
+}
+.signup--btn {
+    padding: 10px;
+    background-color: #e50914;
+    border: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    width: 80px;
+    cursor: pointer;
+    
+}
+
+.landing--text {
+    position: relative;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 1;
+    
+}
+
+.landing--text h1{
+    font-size: 3rem;
+    margin-top: 5rem;
+    line-height: 1.1;
+}
+
+.landing--text h2{
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.landing--text h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+
+}
+
+.getStarted--form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ .getStarted--form input{
+    padding: 10px;
+    border: none;
+    width: 70%;
+    height: 29px;
+    margin-top: 4rem;
+    outline-color: #1a5dee;
+    
+}
+
+.error-input {
+    border-bottom: 1px solid #e7900c;
+}
+.error {
+    color:#e50914;
+    text-align:left;
+    /*margin-left: -20rem;*/
+    margin-top: 7px;
+    
+}
+.getStarted--btn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+}
+
+hr {
+    border: 0;
+    height: 8px;
+    background-color: #333;
+}
+
+.landing--middle {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.landing--middle h1 {
+    font-size: 2.5rem;
+}
+
+.landing--middle h3 {
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.tv{
+    position: relative;
+    z-index: 2;
+}
+
+.tv--img {
+    z-index: 2;
+    position: relative;
+    
+}
+.story--video {
+position: absolute;
+top:46%;
+left: 50%;
+transform: translate(-50%,-50%);
+height: 100%;
+width: 100%;
+max-height: 54%;
+max-width: 74%;
+
+}
+
+.storycard--video{
+    width: 100%;
+    height: 100%;
+}
+
+.landing--lower h1{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    
+}
+
+.landing--lower h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    
+    
+}
+
+.lower--image {
+    position: relative;
+
+}
+
+.image--card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border: 2px solid #333;
+    width: 400px;
+    border-radius: 10px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.boxshot--image {
+    width: 3rem;
+    margin-left: 10px;
+}
+
+.boxshot--content {
+    display: flex;
+    align-items: center;
+    gap:0.8rem
+}
+
+.imagecard--text {
+    display: block;
+    line-height: 1.5;
+}
+
+.imagecard--text h2{
+    font-size: 1.2rem;
+}
+.imagecard--text h4{
+font-size: 0.9rem;
+color: #1a5dee;
+text-align: left;
+}
+
+.watch--text {
+    max-width: 500px;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+
+}
+
+.kid--text {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.kid--text img {
+    width: 100%;
+}
+
+.kickstart--content {
+    padding-bottom: 5rem;
+    margin-top: 3rem;
+   }
+
+.kickstart--formtext {
+    width: 400px;
+    margin: 1rem auto;
+    
+}
+
+.getStarted--form.kickstart {
+    margin-top: -3rem;
+}
+
+@media screen and (max-width:320px) {
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+        flex-direction: column-reverse;
+        
+    }
+
+    .view--btn {
+        padding: 8px;
+        font-size: 0.7rem;
+        width: 85px;  
+    }
+    .signup--btn {
+        padding: 8px;
+        font-size: 0.7rem;
+        width: 75px;
+        
+        
+    }
+
+    .landingPage .nav--logo {
+        width: 3rem;
+    }
+    
+    .landing--text {
+        margin-top: -3rem;
+    }
+
+   .landing--text h1 {
+        font-size: 1rem;
+        width: 310px;
+        
+    }
+    .landing--text h2 {
+        font-size: 1.2rem;
+    }
+
+    .landing--text h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and  (max-width:500px) {
+    .tv--img {
+        width: 100%;
+    }
+    .landing--middle h1 {
+        font-size: 1.5rem;
+    }
+    
+    .landing--middle h3 {
+        font-size: 0.8rem;
+    }
+    
+   .landing--text h1 {
+    font-size: 2rem;
+   } 
+
+   .landing--lower h1{
+    font-size: 1.5rem;
+   }
+
+   .landing--lower h3 {
+    font-size: 0.8rem;
+   }
+
+   .lower--image img {
+    width: 100%;
+   }
+
+   .image--card {
+    width: 200px;
+    height: 80px;
+    top: 73%;
+    
+}
+
+.boxshot--image {
+    width: 2rem;
+    height: 3rem;
+    margin-left: 10px;
+}
+
+.imagecard--text h2{
+    font-size: 0.6rem;
+    white-space: nowrap;
+}
+.imagecard--text h4{
+font-size: 0.6rem;
+color: #1a5dee;
+text-align: left;
+}
+
+.animated--gif img {
+    width: 3rem;
+}
+
+
+   
+}
+
+@media screen and (min-width:550px) and (max-width:800px) {
+    .image--card {
+        width: 400px;
+        height: 100px;
+        top: 80%;
+        
+    }
+
+    .boxshot--image {
+        width: 2rem;
+        height: 3rem;
+        margin-left: 10px;
+    }
+    
+    .imagecard--text h2{
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+    .imagecard--text h4{
+    font-size: 1rem;
+    color: #1a5dee;
+    text-align: left;
+    }
+    
+    .animated--gif img {
+        width: 4rem;
+    }
+    
+}
+
+@media screen and (min-width:960px) and (max-width:1440px) {
+   .getStarted--form{
+    width: 600px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   } 
+
+   .getStarted--form input {
+    height: 40px;
+   }
+
+   .getStarted--form.kickstart {
+    margin-top: -2rem;
+   }
+
+   .getStarted--btn {
+    margin-top: 4rem;
+    height: 59px;
+    width: 200px;
+    font-size: 1.5rem;
+   }
+
+   .landing--middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .landing--middle hr {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .landing--lower h1,.landing--middle h1 {
+    font-size: 3rem;
+   }
+
+   .landing--lower h3,.landing--middle h3{
+    font-size: 1.8rem;
+   }
+   .mobile--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+   }
+
+.watch--text {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5rem;
+    padding: 4rem;
+
+}
+   .kid--text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    flex-direction: row-reverse;
+   }
+
+   .kid--text img {
+    margin-left: -10rem;
+   }
+
+   .kickstart--content {
+    padding-bottom: 5rem;
+   }
+
+   .kickstart--formtext {
+    width: 800px;
+    
+   }
+   
+}
