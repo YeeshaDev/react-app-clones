@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Payment.css';
+import Logo from '../../assets/netflixLogo.png'
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import TabletIcon from '@mui/icons-material/Tablet';
 import TvIcon from '@mui/icons-material/Tv';
@@ -63,7 +64,7 @@ console.log(cardField)
     return (
         <div className='payment--content'>
           <div className='signup--header'>
-        <img src="./images/netflixLogo.png"
+        <img src={Logo}
         alt="logo"
         className='signup--logo'/>
         <Link to="/">

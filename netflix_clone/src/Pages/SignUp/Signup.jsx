@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import './Signup.css';
+import Logo from '../../assets/netflixLogo.png'
 import { Link } from 'react-router-dom';
 import Footer from '../../Components/Footer/Footer';
 import { auth } from '../../Firebase'
@@ -39,7 +40,7 @@ const history = useHistory();
     <div className='signup--details'>
       
       <div className='signup--header'>
-        <img src="./images/netflixLogo.png"
+        <img src={Logo}
         alt="logo"
         className='signup--logo'/>
         <Link to="/login">
