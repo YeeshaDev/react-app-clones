@@ -12,15 +12,13 @@ const [movies,setMovies] = useState([]);
 const [trailerUrl, setTrailerUrl] = useState("")
 
 //extracting the data from the TMDB api using async/await method
-
-useEffect(() => {
-
 async function fetchData() {
-    const request = await axios.get(fetchUrl);
-    //console.log(request)
-    setMovies(request.data?.results);
-    return request;
+  const request = await axios.get(fetchUrl);
+  //console.log(request)
+  setMovies(request.data?.results);
+  return request;
 }
+useEffect(() => {
 fetchData();
 }, [fetchUrl])
 
@@ -51,7 +49,7 @@ const handleClick = async (movie) => {
         <div className='row--cards'>
         {movies.map(
           (movie) =>
-            movie?.poster_path !== null && (
+             (
               <img
                 onClick={() => handleClick(movie)}
                 key={movie.id}

@@ -23,11 +23,11 @@ function App() {
       <Banner/>
       <Row title="Trending Now" fetchUrl={requests.fetchTrending}
       isLarge/>
-      {/*<Row title="New Release" fetchUrl={requests.fetchUpcoming}
-       />*/}
+      <Row title="New Release" fetchUrl={requests.fetchUpcoming}
+       />
       
       <Row title="Netflix Originals" 
-      fetchUrl={requests?.fetchNetflixOriginals}
+      fetchUrl={requests.fetchNetflixOriginals}
        />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated}/>
       <Row title="Action movies" fetchUrl={requests.fetchActionMovies}/>
