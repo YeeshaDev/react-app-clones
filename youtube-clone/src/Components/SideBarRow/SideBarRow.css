@@ -1,0 +1,33 @@
+.sideContent {
+display: flex;
+align-items: center;
+padding: 0.8rem 1.2rem;
+}
+
+.sideIcons {
+    color: #201f1f;
+
+}
+
+.title {
+    flex: 1;
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #201f1f;
+}
+
+.sideContent:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.sideContent.selected {
+    background-color: #a3a2a2;
+    margin-top: 1rem;
+}
+
+.sidebar--content.active .sideContent.selected {
+    background-color: transparent;
+}
+

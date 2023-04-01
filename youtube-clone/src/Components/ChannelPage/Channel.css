@@ -1,0 +1,43 @@
+.channel--content {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+    max-width: 500px;
+}
+.channel--logo{
+    width:9rem;
+    height: 9rem;
+    border-radius: 50%;
+}
+
+.channel--text {
+    max-width: 700px;
+
+}
+.channel--text > p {
+    font-size:0.7rem;
+    color:grey;
+    margin-top: 1rem;
+    line-height: 1;
+    width: 80%;
+}
+
+@media screen and (max-width:320px) {
+    .channel--text {
+        max-width: 150px;
+    }
+    .channel--logo {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .channel--text {
+        max-width: 200px;
+    }
+    .channel--logo {
+        width: 4rem;
+        height: 4rem;
+    }
+}
